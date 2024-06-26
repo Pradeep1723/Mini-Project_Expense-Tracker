@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Expense Tracker Project</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap"
+			rel="stylesheet" />
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="main">
+			<div class="heading">
+				<h1>Expense Tracker</h1>
+			</div>
+			<div class="chart-container">
+				<canvas id="chart"></canvas>
+				<h3 class="total">
+					Total
+					<span class="amount">$0</span>
+				</h3>
+				<div class="labels"></div>
+			</div>
+			<div class="transactions">
+				<h3>Transactions</h3>
+				<form>
+					<input placeholder="House rent, Salary or SIP" />
+				</form>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
