@@ -1,0 +1,1 @@
+This repository contains a mini-project called Expense Tracker, which helps you track your expenses by allowing you to add, edit, and delete entries using Vanilla JavaScript. Additionally, it utilizes Chart.js to display charts for visual analysis of your expense data.
