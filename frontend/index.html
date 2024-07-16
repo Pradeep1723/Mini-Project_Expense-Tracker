@@ -6,10 +6,9 @@
 		<title>Expense Tracker Project</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap"
-			rel="stylesheet" />
-		<link href="style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<div class="main">
@@ -20,24 +19,33 @@
 				<canvas id="chart"></canvas>
 				<h3 class="total">
 					Total
-					<span class="amount">$0</span>
+					<span class="amount">₹0</span>
 				</h3>
 				<div class="labels"></div>
 			</div>
 			<div class="transactions">
 				<h3>Transactions</h3>
-				<form>
+				<form id="form">
 					<div class="input-fields">
-						<input placeholder="Enter House rent, Salary or SIP" />
-						<input placeholder="Enter Crypto Investment" />
-						<input placeholder="Enter Expense" />
-						<button>Submit</button>
+						<input id="description" placeholder="Enter House rent, Salary or SIP" />
+						<select id="type" class="select-inputs">
+							<option value="Investment">Investment</option>
+							<option value="Expense">Expense</option>
+							<option value="Savings">Savings</option>
+						</select>
+						<input id="amount" placeholder="Enter amount" />
+						<button type="submit">Make Transaction</button>
 					</div>
 				</form>
+				<div class="history">
+					<h4>History</h4>
+					<div class="history-types"></div>
+				</div>
 			</div>
 		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 		<script src="app.js"></script>
+		<script src="formHandler.js"></script>
 	</body>
 </html>

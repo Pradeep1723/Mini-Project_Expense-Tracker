@@ -58,12 +58,35 @@ labelData.map((data) => {
 	label.textContent = data.type ?? '';
 
 	const percentage = document.createElement('span');
-    percentage.textContent = `${data.percentage ?? 0}%`;
-    percentage.classList.add('percentage');
+	percentage.textContent = `${data.percentage ?? 0}%`;
+	percentage.classList.add('percentage');
 
 	labelElement.appendChild(bulletPoint);
 	labelElement.appendChild(label);
 	labelElement.appendChild(percentage);
 
 	labelsContainer.appendChild(labelElement);
+});
+
+const historyLabels = [
+	{ name: 'Savings' },
+	{ name: 'Crypto Investment' },
+	{ name: 'Expense' },
+];
+
+const historyContainer = document.querySelector('.history-types');
+
+historyLabels.forEach(data => {
+	const historyElement = document.createElement('span');
+	historyElement.setAttribute('class', 'history-element');
+
+	const textNode = document.createTextNode(data.name);
+
+	const icon = document.createElement('i');
+	icon.setAttribute('class', 'fa-solid fa-trash');
+
+	historyElement.appendChild(textNode);
+	historyElement.appendChild(icon);
+
+	historyContainer.appendChild(historyElement);
 });
