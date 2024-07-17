@@ -33,7 +33,7 @@ const labelData = [
 		percentage: 20,
 	},
 	{
-		type: 'Crypto Investment',
+		type: 'Investment',
 		color: 'rgb(54, 162, 235)',
 		percentage: 40,
 	},
@@ -70,7 +70,7 @@ labelData.map((data) => {
 
 const historyLabels = [
 	{ name: 'Savings' },
-	{ name: 'Crypto Investment' },
+	{ name: 'Investment' },
 	{ name: 'Expense' },
 ];
 
