@@ -30,5 +30,5 @@ const transactionModel = new schema({
     }
 });
 
-module.exports.categories = mongoose.model('categories', categoriesModel);
-module.exports.transactions = mongoose.model('transactions', transactionModel);
+module.exports.Categories = mongoose.model('categories', categoriesModel);
+module.exports.Transactions = mongoose.model('transactions', transactionModel);
